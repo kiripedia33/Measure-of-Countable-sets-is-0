@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newtheorem{lemma}{Lemma}
+\linespread{1.5}
+\begin{document}
+	The measure of a countable set is 0. 
+	\begin{proof}
+		~\\
+		A countable set $E$ can be expressed as $\{x_{1},x_{2},x_{3},...,x_{n},...\}$\\
+		Let $I_{k}=(x_{k}-\varepsilon\frac{2^{-k}}{4},x_{k}+\varepsilon\frac{2^{-k}}{4}),\forall\varepsilon$\\
+		\[m(\bigcup_{k=1}^{\infty}I_{k})\leq\sum_{k=1}^{\infty}m(I_{k})=\sum_{k=1}^{\infty}2\varepsilon\frac{2^{-k}}{4}=\varepsilon\sum_{k=1}^{\infty}2^{-k-1}=\frac{\varepsilon}{2}<\varepsilon\]
+		Thus, $m(E)=0$
+	\end{proof}
+\end{document}
